@@ -17,4 +17,5 @@ total_c NOT IN (
     HAVING c3.hacker_id != c.hacker_id
 )
 ORDER BY 3 DESC, h.hacker_id;
+
 --mysql
