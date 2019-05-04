@@ -23,3 +23,13 @@ if __name__ == '__main__':
 
     for i in sorted(arr, key=func):
         print (*i)
+
+
+# Using operator.itemgetter
+from operator import itemgetter
+n,m = list(map(int, input().split()))
+
+arr = [[int(i) for i in input().split()] for _ in range(n)]
+
+for i in sorted(arr, key=itemgetter(int(input()))):
+    print (*i)
